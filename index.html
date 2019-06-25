@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Think with Google</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <nav>
+      <div>
+        <i class="fa fa-bars"></i>
+      </div>
+        <ul>
+            <li> <a href="index.html"><img id="google" src="think.png"></a></li>
+            <li id="list">
+
+                <select>
+                    <option> English United states </option>
+                    <option> English United Kingtom </option>
+                    <option> English Asia pacific </option>
+                    <option> English Australia </option>
+
+                </select>
+            </li>
+            <li> <a href="#" class="secondlist">Consumer Insights </a></li>
+            <li> <a href="#">Marketing Resources <i class="fa fa-sort-desc"></i> </a>
+                <ul>
+                    <li> <a href="#"> Data & Measurement </a> </li>
+                    <li> <a href="#">Experience & Design </a></li>
+                    <li> <a href="#">Monetization </a></li>
+                    <li> <a href="#">Omnichannel</a></li>
+                    <li> <a href="#">Organizational Culture</a></li>
+                    <li> <a href="#">Programmatic Advertising</a></li>
+                    <li> <a href="#">Tools</a></li>
+                    <li> <a href="#">Tutorial</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Advertising Channels </a>
+                <ul>
+                    <li> <a href="#">Emerging Tecnology</a></li>
+                    <li> <a href="#">Mobile</a></li>
+                    <li> <a href="#">Search</a></li>
+                    <li> <a href="#">YouTube</a></li>
+                </ul>
+            </li>
+            <li> <a href="#"><img id="search" src="search.jpg"></a></li>
+
+        </ul>
+        <p>Insights you want.<br/>
+        Inspiration you need.</p>    
+        <p id="subtext"> Stay on top of the latest and greatest </p>
+         <button type="button"><a href="#">SUBSCRIBE</a></button>   
+
+    </nav>
+
+       <section id="mainbody">
+           <h1> Latest trends and stories</h1>
+           <ul id= "grid-item">
+               <li class="one">
+                   <iframe src="https://www.youtube.com/embed/GG04oOdJAKQ" frameboder="0"  allow="autoplay; encrypted-media" allowfullscreen> 
+                </iframe>             
+                 </li>
+               <li class="one">
+                 <img id="evaluate" src="evaluate.jpg" alt="evaluate">
+                 <div>How to bring your marketing mix modeling into the 21st century</div> 
+            </li>
+                <li class="one">
+                    <img id="offline" src="offline.jpg" alt="offline">
+                    <div> Think beyond the buy: Shopping is an omnichannel journey
+                      </div>
+                    </li>
+                <li class="one">
+                    <img  id="onlinecar" src="onlinecar.png" alt="onlinecar">
+                    <div> The future of car buying is online </div>
+                </li>
+                <li class="one">
+                        <img id="springboard" src="springboard.jpg" alt="springboard">
+                    <div> Organic reach is elusive. It doesn’t have to be
+                    </div>
+                </li>
+                <li class="one">
+                        <iframe src="https://www.youtube.com/embed/hSzCI5j4YPM" frameboder="0"  allow="autoplay; encrypted-media" allowfullscreen> 
+                        </iframe>             
+                         </li>
+           </ul>
+          </section>
+       <script type="text/javascript">
+       $("nav div").click(function() {
+         $("ul").slideToggle();
+         $("ul ul").css("display","none")
+       })
+
+       $("ul li").click(function() {
+          $("ul ul").slideUp()
+          $(this).find('ul').slideToggle()
+                 })
+        $(window).resize(function() {
+           if ($(window).width() > 768) {
+             $("ul").removeAttr('style')
+           }
+        })
+         
+       
+       </script>
+
+</body>
+
+</html>
